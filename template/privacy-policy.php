@@ -201,6 +201,7 @@ get_header(); ?>
                                         regarding this Privacy Policy or your personal data, please contact us:</p>
                                     <div class="space-y-3 text-slate-700"><p class="font-semibold text-slate-900">
                                             Egyptian Marble &amp; Granite</p>
+                                        <?php if (apply_filters('emg_show_address', false)) : ?>
                                         <p class="flex items-start">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -212,6 +213,7 @@ get_header(); ?>
                                             17 El Shaheed Ahmed Zaki St, Behind Obour Bldgs., 9th Floor, Office 9, Nasr
                                             City, Cairo, Egypt
                                         </p>
+                                        <?php endif; ?>
                                         <p class="flex items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

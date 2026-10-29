@@ -150,6 +150,7 @@ if (!defined('ABSPATH')) {
             <div class="space-y-4">
                 <h4 class="font-semibold text-lg text-olive-400">Contact Information</h4>
                 <div class="space-y-3">
+                    <?php if (apply_filters('emg_show_address', false)) : ?>
                     <div class="flex items-start space-x-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -162,6 +163,7 @@ if (!defined('ABSPATH')) {
                             <p class="mb-0">Nasr City, Cairo, Egypt.</p>
                         </div>
                     </div>
+                    <?php endif; ?>
                     <div class="flex items-center space-x-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

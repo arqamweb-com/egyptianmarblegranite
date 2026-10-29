@@ -19,7 +19,7 @@
                         <line x1="12" x2="12" y1="15" y2="3"></line>
                     </svg>Download Catalogue</a>
             </div>
-            <div class="grid md:grid-cols-3 gap-8 text-center transition-all duration-1000 animate-slide-in-up opacity-100" style="animation-delay: 600ms;">
+            <div class="grid <?php echo apply_filters('emg_show_address', false) ? 'md:grid-cols-3' : 'md:grid-cols-2'; ?> gap-8 text-center transition-all duration-1000 animate-slide-in-up opacity-100" style="animation-delay: 600ms;">
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300">
                     <h4 class="font-semibold text-lg text-white mb-2">Call Us Today</h4>
                     <p class="text-olive-100 mb-0">002-01000390999</p>
@@ -28,10 +28,12 @@
                     <h4 class="font-semibold text-lg text-white mb-2">Email Us</h4>
                     <p class="text-olive-100 mb-0"><!--email_off--><a href="mailto:sales@egyptianmarblegranite.com">sales@egyptianmarblegranite.com</a><!--/email_off--></p>
                 </div>
+                <?php if (apply_filters('emg_show_address', false)) : ?>
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300">
                     <h4 class="font-semibold text-lg text-white mb-2">Visit Our Showroom</h4>
                     <p class="text-olive-100 mb-0">Nasr City, Cairo, Egypt</p>
                 </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>

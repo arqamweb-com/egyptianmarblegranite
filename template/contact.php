@@ -65,6 +65,7 @@ get_header(); ?>
                                             </svg><!--email_off--><a href="mailto:sales@egyptianmarblegranite.com" class="hover:text-stone-olive transition-colors break-all">sales@egyptianmarblegranite.com</a><!--/email_off--></p>
                                     </div>
                                 </div>
+                                <?php if (apply_filters('emg_show_address', false)) : ?>
                                 <div class="mb-10">
                                     <h3 class="font-semibold text-xl text-stone-dark mb-4 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5 text-stone-olive">
                                             <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
@@ -87,6 +88,7 @@ get_header(); ?>
                                         <p>Shak El Thoban,<br>El Autostorads, El Maadi, Egypt</p>
                                     </div>
                                 </div>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
