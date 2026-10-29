@@ -43,6 +43,7 @@ get_header(); ?>
                         <div class="transition-all duration-700 opacity-100 translate-x-0">
                             <div class="bg-stone-beige/20 rounded-xl p-8 h-full">
                                 <h2 class="font-serif text-2xl md:text-3xl text-stone-dark mb-8">Contact Egyptian Marble and Granite</h2>
+                                <?php if (apply_filters('emg_show_address', false)) : ?>
                                 <div class="inline-flex items-center gap-2 bg-stone-olive/10 text-stone-olive px-4 py-2 rounded-full mb-8"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 w-5 h-5">
                                         <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
                                         <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
@@ -52,6 +53,7 @@ get_header(); ?>
                                         <path d="M10 14h4"></path>
                                         <path d="M10 18h4"></path>
                                     </svg><span class="font-semibold">Factories &amp; Showrooms</span></div>
+                                <?php endif; ?>
                                 <div class="mb-10">
                                     <h3 class="font-semibold text-xl text-stone-dark mb-6 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-stone-olive">
                                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>

@@ -26,7 +26,7 @@
                 </div>
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300">
                     <h4 class="font-semibold text-lg text-white mb-2">Email Us</h4>
-                    <p class="text-olive-100 mb-0"><!--email_off--><a href="mailto:sales@egyptianmarblegranite.com">sales@egyptianmarblegranite.com</a><!--/email_off--></p>
+                    <p class="text-olive-100 mb-0"><!--email_off--><a href="mailto:sales@egyptianmarblegranite.com" class="text-olive-100 hover:text-white transition-colors">sales@egyptianmarblegranite.com</a><!--/email_off--></p>
                 </div>
                 <?php if (apply_filters('emg_show_address', false)) : ?>
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/20 transition-colors duration-300">
