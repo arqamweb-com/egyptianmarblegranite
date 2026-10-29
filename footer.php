@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) {
                     </div>
                 </div>
                 <p class="text-stone-300 text-sm leading-relaxed mb-0">Egypt's leading supplier of premium natural
-                    stone. We've been crafting excellence in marble, granite, and luxury stone solutions since 1985.</p>
+                    stone. We've been crafting excellence in marble, granite, and luxury stone solutions since 2006.</p>
                 <div class="flex space-x-4">
                     <a href="https://www.facebook.com/EMG-Egyptian-Marble-Granite-305718266681112/"
                        class="text-stone-300 hover:text-olive-400 transition-colors">
