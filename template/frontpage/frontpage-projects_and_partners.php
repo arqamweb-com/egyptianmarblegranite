@@ -1,3 +1,4 @@
+<?php if (apply_filters('emg_show_projects_partners', false)) : ?>
 <section class="py-20 bg-white">
     <div class="ast-container">
         <div class="text-center mb-16">
@@ -6,6 +7,7 @@
         </div>
         <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div class="space-y-8">
+                <?php if (apply_filters('emg_show_major_projects', false)) : ?>
                 <div>
                     <h3 class="font-serif text-2xl font-bold text-slate-800 mb-4">Major Projects Include:</h3>
                     <ul class="space-y-3">
@@ -23,14 +25,19 @@
                             </svg><span class="text-slate-600">Czech Spa Project</span></li>
                     </ul>
                 </div>
+                <?php endif; ?>
                 <div class="space-y-4">
+                    <?php if (apply_filters('emg_show_major_projects', false)) : ?>
                     <a href="<?php echo ($page_project = get_page_by_path('projects')) ? get_permalink($page_project->ID) : ''; ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 py-2 bg-olive-600 hover:bg-olive-700 hover:text-white text-white w-full">Visit Our Project Gallery
                         <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right ml-2 h-5 w-5">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
                     </a>
+                    <?php endif; ?>
+                    <?php if (apply_filters('emg_show_address', false)) : ?>
                     <a href="https://www.google.com/maps/place/EMG-Egyptian+Marble+Granite/@30.0756615,31.3041644,17z/data=!4m8!3m7!1s0x14583f40ad8f3705:0xad2963efa23c306d!8m2!3d30.0756615!4d31.3041644!9m1!1b1!16s%2Fg%2F11gmvbxx4g?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-background hover:text-accent-foreground h-10 px-4 py-2 border-olive-600 text-olive-600 hover:bg-olive-50 w-full" style="border-style: solid;">Read Client Reviews</a>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
@@ -74,3 +81,4 @@
         </div>
     </div>
 </section>
+<?php endif; ?>

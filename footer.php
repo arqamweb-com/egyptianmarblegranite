@@ -123,8 +123,10 @@ if (!defined('ABSPATH')) {
                 <div class="space-y-2">
 					<a class="block text-stone-300 hover:text-white transition-colors" href="<?php echo ($page = get_page_by_path('about-us')) ? get_permalink($page->ID) : '#'; ?>">About Us</a>
 					<a class="block text-stone-300 hover:text-white transition-colors" href="<?php echo ($page = get_page_by_path('products')) ? get_permalink($page->ID) : '#'; ?>">Products</a>
+					<?php if (apply_filters('emg_show_projects_links', false)) : ?>
 					<a class="block text-stone-300 hover:text-white transition-colors"
                             href="<?php echo ($page = get_page_by_path('projects')) ? get_permalink($page->ID) : '#'; ?>">Portfolio</a>
+					<?php endif; ?>
 					<a class="block text-stone-300 hover:text-white transition-colors" href="<?php echo ($page = get_page_by_path('blog')) ? get_permalink($page->ID) : '#'; ?>">Blog</a>
 					<a class="block text-stone-300 hover:text-white transition-colors" href="<?php echo ($page = get_page_by_path('contact-us')) ? get_permalink($page->ID) : '#'; ?>">Contact</a>
                 </div>

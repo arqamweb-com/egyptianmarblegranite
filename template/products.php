@@ -135,6 +135,7 @@ get_header(); ?>
                     </div>
                 </div>
             </section>
+            <?php if (apply_filters('emg_show_products_projects', false)) : ?>
             <section class="py-16 md:py-24 bg-muted">
                 <div class="ast-container transition-all duration-1000 translate-y-10">
                     <h2 class="text-3xl md:text-4xl font-serif font-bold text-foreground text-center mb-8">Our Projects</h2>
@@ -159,6 +160,7 @@ get_header(); ?>
                     <div class="text-center mt-12"><a class="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-medium rounded-md hover:bg-primary/90 hover:text-white transition-colors duration-300" href="/projects">View All Projects</a></div>
                 </div>
             </section>
+            <?php endif; ?>
         </div>
     </main>
 
