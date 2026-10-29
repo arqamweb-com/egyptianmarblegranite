@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* container */
+.container {
+  @apply mx-auto px-4;
+}
+
+/* html tailus ui */
+@layer base {
+  :root {
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --ui-border-color: #e2e8f0;
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.75rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --tw-ring-color: rgb(113 132 96 / var(--tw-border-opacity, 1));
+  }
+
+  * {
+    border-color: var(--ui-border-color);
+  }
+}
+
+@layer utilities {
+  /* Background */
+  .bg-ui {
+    background: var(--ui-bg);
+  }
+}
+
+@layer components {
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  /* top bar  */
+  #block-11 p {
+    display: none;
+  }
+
+  .interactive-card {
+    box-shadow: 0 4px 20px -4px hsl(var(--foreground) / 0.1);
+  }
+
+  #contact form label {
+    @apply block text-sm font-semibold;
+  }
+
+  #contact form label span {
+    @apply mt-2;
+  }
+
+  #contact form input:not([type="checkbox"]) {
+    @apply w-full px-4 py-3 border border-solid border-border rounded-xl focus:ring-2 focus:ring-border-focus focus:border-border-focus transition-all outline-none;
+  }
+
+  #contact form textarea {
+    @apply max-h-32 w-full px-4 py-3 border border-solid border-border rounded-xl focus:ring-2 focus:ring-border-focus focus:border-border-focus transition-all outline-none resize-none;
+  }
+
+  #contact form fieldset {
+    @apply mb-8 rounded-xl;
+  }
+
+  #contact form fieldset span.service-checkbox {
+    @apply flex flex-col;
+  }
+
+  #contact form fieldset span.service-checkbox > span {
+    @apply ml-0;
+  }
+
+  #contact form fieldset span.service-checkbox > span label {
+    @apply flex items-center gap-3 p-4 border border-solid border-border rounded-xl cursor-pointer hover:border-primary transition-colors mb-4;
+  }
+
+  #contact form fieldset span.service-checkbox > span label input {
+    @apply w-fit;
+  }
+
+  #contact form fieldset span.service-checkbox > span label span {
+    @apply mt-0;
+  }
+
+  #contact form input[type="submit"] {
+    @apply w-full;
+  }
+
+  /* single product page  */
+
+  .emg-pro-breadcrumb,
+  .emg-pro-breadcrumb a {
+    @apply text-white;
+  }
+
+  .emg-pro-breadcrumb a {
+    @apply hover:underline;
+  }
+
+  /* tractions */
+  #ast-scroll-top {
+    @apply flex justify-center items-center !important;
+  }
+}
